@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Starting Jenkins Service
+sudo systemctl start jenkins
+echo "Starting Jenkins...."
+
+STATUS=$(~/Work_Space/DevOps/Jenkins/Scripts/./jenkins.sh)
+sleep 20
+echo "$STATUS !!"

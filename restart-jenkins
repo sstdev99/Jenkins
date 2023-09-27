@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Restart Jenkins Service
+sudo systemctl restart jenkins
+echo "Restarting Jenkins...."
+
+STATUS=$(~/Work_Space/DevOps/Jenkins/Scripts/./jenkins.sh)
+sleep 10
+echo "Restarted && $STATUS !!"
